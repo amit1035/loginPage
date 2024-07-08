@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App.jsx';
 import reportWebVitals from './reportWebVitals.js';
-import { RouterProvider, createBrowserRouter } from 'react-router-dom';
+import { RouterProvider, createHashRouter } from 'react-router-dom';
 import Home from './components/Home/Home.jsx';
 import About from './components/About/About.jsx';
 import Layout from './components/Layout.jsx';
@@ -11,7 +11,7 @@ import Contact from './components/Contact/Contact.jsx';
 import Github from './components/Github/Github.jsx';
 
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: '/',
     element: <Layout/>,
